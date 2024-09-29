@@ -11,12 +11,12 @@ let matchdays =  fixtureObject(fixtures);
   return(
     <div>
       <div className="flex-row mt-[10%] border border-gray-500 text-center md:w-[80%] w-[100%] md:ml-[15vh]">
-        {matchdays.map(match=>(<div key={match.matchday} ><div key={match.matchday}>
+        {matchdays.map(match=>(<div key={match.matchday} ><div>
           Gameweek {match.matchday}
           <hr className="border-gray-500"/>
           </div>
           <div className="mt-5 mb-10 grid grid-cols-2 gap-6 pl-[5%] pr-[%]">
-            {match.games.map((games)=><div key ={games.id}className="flex items-center text-sm ">
+            {match.games.map((games)=><div key ={games.id} className="flex items-center text-sm ">
             {games.status === "TIMED" &&
             <div className="flex">
              <div className="flex-col  h-[5vh] md:gap-x-10 border-r-2 pr-3 w-[30vh] md:w-[30vh] md:text-[0.9rem]">
