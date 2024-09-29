@@ -21,7 +21,7 @@ export default function Filter({totalSeason,league,category}){
     }
   return(<div>
     <select value={season} onChange={e=> handleFilter(e.target.value)} className="h-7 border-gray-950 border rounded"  type="select">
-    {filteredSeason.map(date=>(<option value={date.getFullYear()}>{date.getFullYear()}</option>))}
+    {filteredSeason.map(date=>(<option key ={date.getFullYear()} value={date.getFullYear()}>{date.getFullYear()}</option>))}
     </select>
     </div>
   )
