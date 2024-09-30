@@ -30,10 +30,10 @@ return(
     <thead>
       {
         headerGroups.map(headerGroup=>(
-          <tr {...headerGroup.getHeaderGroupProps()}>
+          <tr key={headerGroup.id} {...headerGroup.getHeaderGroupProps()}>
             {
               headerGroup.headers.map((column)=>(
-               <th {...column.getHeaderProps(column.getSortByToggleProps())}>
+               <th key={column.id} {...column.getHeaderProps(column.getSortByToggleProps())}>
                 {column.render('Header')}
                 <span>
                 {column.isSorted ? column.isSortedDesc? ' 🔽': ' 🔼': ''}
