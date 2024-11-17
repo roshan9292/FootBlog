@@ -10,4 +10,4 @@ Technolgy used
 -->Git
 -->Javascript/TypeScript
 
-Live On:<a src="footblog.vercel.app">footblog.vercel.app</a>
+Live On:<a src="footblog.vercel.app">food</a>
