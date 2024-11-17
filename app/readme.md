@@ -9,3 +9,5 @@ Technolgy used
 -->Tailwind Css
 -->Git
 -->Javascript/TypeScript
+
+Live On:<a src="footblog.vercel.app">footblog.vercel.app</a>
